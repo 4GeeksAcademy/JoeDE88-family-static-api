@@ -53,9 +53,9 @@ class FamilyStructure:
 
     def delete_member(self, id):
         # fill this method and update the return
-        for member in self._members:
+        for i, member in enumerate(self._members):
             if member['id'] == id:
-                deleted_member = self._members.pop(id)
+                deleted_member = self._members.pop(i)
                 return deleted_member
         return None
 
